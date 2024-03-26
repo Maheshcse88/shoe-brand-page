@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <img src="./shoes-removebg-preview (3).png" alt="">
+</body>
+</html>
+
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        background-image: url(./Untitled_design-removebg-preview.png);
+        background-size: cover;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation: back 4s infinite alternate-reverse;
+    }
+    div{
+        height: 400px;
+        width: 400px;
+        /* background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); */
+        /* background: linear-gradient(tomato, royalblue); */
+        background: linear-gradient(#b08b5f, #387490); 
+        /* background-color: #387490; */
+        border-radius: 50%;
+        position: absolute;
+        justify-self: center;
+        z-index: -1;
+        animation: rotate 4s infinite ease-in-out;
+    }
+    img{
+        animation: jump 8s infinite;
+    }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes jump{
+        0%{
+            transform: translateY(-500%);
+        }
+        40%{
+            transform: translateY(0%);
+        }
+        60%{
+            transform: translateY(20%);
+        }
+        80%{
+            transform: translateY(-20%);
+        }
+        100%{
+            transform: translateY(20%);
+        }
+    }
+
+    @keyframes back{
+        0%{
+            background: #212121;
+            background-image: url(./Untitled_design-removebg-preview.png);
+            background-size: cover;
+        }
+        100%{
+            background: #316a88;
+            background-image: url(./Untitled_design-removebg-preview.png);
+            background-size: cover;
+        }
+    }
+</style>
